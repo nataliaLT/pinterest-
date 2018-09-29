@@ -1,0 +1,16 @@
+.navbar{
+background-color:white;
+border-bottom: 1px solid #F3F2F2;
+}
+.imagen{
+width: 50px;
+}
+.busqueda{
+    background-color: #F8F8F8;
+}
+.nav-link{
+    color: #9A9998;
+}
+.inicio{
+    color: black;
+}
