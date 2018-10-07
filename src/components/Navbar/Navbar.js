@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from "../../imagenes/pinterest-logo.png";
 import "./Navbar.css";
+import {FontAwesomeIcon} from '@fortawesome/react-FontAwesomeIcon';
+import {chat} from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
     return (
@@ -21,7 +23,7 @@ const Navbar = () => {
     <a class="nav-link" href="#">Natalia</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Mensaje</a>
+    <a class="nav-link" href="#"><FontAwesomeIcon className="fas fa-comment-dots"/></a>
   </li>
 </ul>
 </nav>
