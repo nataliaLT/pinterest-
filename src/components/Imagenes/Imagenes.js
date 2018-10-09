@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import StackGrid from 'react-stack-grid';
 import '../Imagenes/Imagenes.css'
+import PropTypes from 'prop-types';
 
 class Imagenes extends Component {
     render () {
@@ -16,4 +17,7 @@ class Imagenes extends Component {
      }
 }
 
+Imagenes.protoTypes = {
+  imagenes: PropTypes.array.isRequired
+}
 export default Imagenes; 
