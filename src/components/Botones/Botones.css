@@ -1,0 +1,33 @@
+.btn{
+    margin: 5px;
+} 
+.btn-info{
+    border: gray;
+}
+.verde{
+    background-color: #54a992;
+}
+.cafe{
+    background-color: #e8c571;
+}
+.grisazul{
+    background-color: #eddbc3;
+}
+.verdeintenso{
+    background-color: #8fb59c;
+}
+.rosado{
+    background-color: #d94c3a;
+}
+.negro{
+    background-color: #3b3630;
+}
+.naranjo{
+  background-color: #813a26;
+}
+.violeta{
+  background-color: #712164;
+}
+.autos{
+    background-color: #f8b500;
+}

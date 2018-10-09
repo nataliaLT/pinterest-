@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import Pinterest from '../src/components/Pinterest/Pinterest';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-       <Navbar />
+       <Pinterest />
       </div>
     );
   }
