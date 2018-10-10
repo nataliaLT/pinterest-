@@ -10,6 +10,18 @@ import FlatButton from 'material-ui/FlatButton';
 
 
 class Imagenes extends Component {
+  state = {
+    open:false,
+    currentImg: ''
+  }
+
+  handleOpen= img => {
+    this.setState({open: true, currentImg: img});
+  }
+
+  handleClose = () => {
+    this.setState({open: false});
+  }
     render () {
       let listaImagenes;
       const {images} = this.props;
@@ -27,7 +39,7 @@ class Imagenes extends Component {
                 </span>
               }
               actionIcon = {
-                <IconButton>
+                <IconButton onClick={() => this.handleOpen(img.largeImageURL)}>
                   <ZoomIn color="white"></ZoomIn>
                 </IconButton>
               }
@@ -43,9 +55,19 @@ class Imagenes extends Component {
         //En caso de que no existan imagenes
         listaImagenes = null;
       }
+      const actions = [
+        <FlatButton label="close" primary={true} onClick={this.handleClose} />
+      ]
         return (
          <div>
            {listaImagenes}
+           <Dialog 
+             actions={actions}
+             modal={false}
+             open={this.state.open}
+             onRequestClose={this.handleClose}>
+              <img src={this.state.currentImg} alt="" style={{width: '100%'}}/>
+             </Dialog>
            
          </div>
        );
