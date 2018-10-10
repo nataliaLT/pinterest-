@@ -6,7 +6,7 @@ class Botones extends Component{
         return (
             <div className="container">
   <div className="row">
-    <div className="col-ls-12 col-7">
+    <div className="col-ls-12 fondo">
     <button type="button" className="btn btn-info verde">Entretención</button>
         <button type="button" className="btn btn-info cafe">Moda</button>
         <button type="button" className="btn btn-info grisazul">Computación y Ciencia</button>
